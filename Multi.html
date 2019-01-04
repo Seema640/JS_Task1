@@ -1,44 +1,18 @@
 <!DOCTYPE html>
 
 <html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="MultipleQues.js"></script>
+</head>
 
 <body>
-
-    <!--Questions-->
-    <h1> ______ is the biggest planet in the solar system.</h1><br>
-
-    <!---Choices layout --->
-    <form >
-        <input type = "radio" name = "choice" value="Uranus"> Uranus
-        <input type = "radio" name = "choice" value="Jupiter"> Jupiter
-        <input type = "radio" name = "choice" value="Mars"> Mars
-    </form>
-
-    <!--Button display-->
-    <button onclick="submit()">Confirm Answer</button> 
-
-    <h2> How many colors are there in a rainbow?  </h2>
-    
-    <form>
-        <input type="radio" name="choice" value="seven">seven
-        <input type="radio" name="choice" value="six">six
-        <input type="radio" name="choice" value="two">two
-    </form>
-
-    <button onclick="submit()"> Confirm Answer</button> 
-
-    <h3> What is the height of Mt.Everest? </h3>
-
-    <form>
-        <input type="radio" name="choice" value="6789 ">6789m
-        <input type="radio" name="choice" value="8848">8848m
-        <input type="radio" name="choice" value="87489">87489m
-    </form>
-    
-    <button onclick="submit()"> Confirm Answer</button> 
-
-    <!--connection to Javascript-->
-    <script src="MultipleQues.js"></script>
-     
+        <h2 id = "test_status" ></h2>
+        <div id = "test" ></div>
 </body>
+
 </html>
