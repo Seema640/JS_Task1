@@ -7,12 +7,68 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="MultipleQues.js"></script>
-</head>
 
+</head>
 <body>
-        <h2 id = "test_status" ></h2>
-        <div id = "test" ></div>
+    
+   
+    
+    <div id = "phaseone" class = "question one" style = "visibility: visible">
+        <h1> QUESTIONS </h1>
+        <p><b>Question 1 of Question 3</b></p>
+       <p><b> What is the capital of Nepal ? </b></p>
+    
+       <input type = "radio" name = "choice" value = "A" class = "option">Kathmandu<br>
+       <input type = "radio" name = "choice" value = "B" class = "option">Biratnagar <br>
+       <input type = "radio" name ="choice" value = "C"  class = "option">Chitwan <br>
+       <br>
+
+       <button id = "submit" name = "answer" value = "Show Div" onclick = "submit()">
+               Submit answers
+       </button>
+
+    </div>
+
+    <div id = "phasetwo" class = "question two" style = "display:none">
+        <h1> QUESTIONS </h1>
+        <p><b>Question 2 of Question 3</b></p>
+        <p> How many colors are there in a rainbow ? </p>
+    
+        <input type = "radio" name = "choice" value = "A" class = "option">Four <br>
+        <input type = "radio" name = "choice" value = "B" class = "option">Seven <br>
+        <input type = "radio" name ="choice" value = "C"  class = "option">Two <br>
+        <br>
+
+        <button id = "submit" name = "answer" value = "Show Div" onclick = "second_que()">
+                Submit answers
+        </button>
+    
+    </div>
+
+    <div id = "phasethree" class = "question three" style = "display:none">
+        <h1> QUESTIONS </h1>
+        <p><b>Question 3 of Question 3</b></p>
+
+        <p> What is the biggest planet on solar system? </p>
+
+        <input type = "radio" name = "choice" value = "A" class = "option">Saturn <br>
+        <input type = "radio" name = "choice" value = "B" class = "option">Jupiter <br>
+        <input type = "radio" name = "choice" value = "C" class = "option">Mars <br>
+        <br>
+    <button id = "submit" name = "answer" value = "Show Div" onclick = "third_que()">
+            Submit answers
+        </button>
+        
+    </div>  
+    <div id = "phasefour" class = "question no" style = "display: none">
+        <p id = "one"><b> TEST COMPLETED</b></p>
+        <p id ="demo"></p>
+    </div>
+    
+    
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="MultipleQues.js"></script>
 </html>
